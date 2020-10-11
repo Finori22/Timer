@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap");
+body {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Neue", Arial, Helvetica, sans-serif;
+  background-image: url("backgroundPhoto.jpg");
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 88px;
+  color: black;
+}
+
+.photo {
+  background-image: url("franekRotate.png");
+  background-position: center;
+  background-size: contain;
+  border-left: solid 50px wheat;
+  width: 40vw;
+  height: 43vw;
+  margin-bottom: 0px;
+  /* animation: rotation 60s infinite;
+  animation: move 6s infinite; */
+}
+
+.photo {
+  animation-duration: 15s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
